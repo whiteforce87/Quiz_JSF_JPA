@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<h1>Question-1</h1>
+	<div>
+		<h:outputText value="abccd" />
+
+		<h:form>
+			<h:panelGrid>
+
+				<h:selectOneRadio value="#{quesitonBean.amount}" >
+
+
+					<f:selectItem itemValue= "1" itemLabel="1" />
+
+					<f:selectItem itemValue= "2" itemLabel="2" />
+
+					<f:selectItem itemValue= "3"  itemLabel="3" />
+
+					<f:selectItem itemValue= "4" itemLabel="4" />
+
+				</h:selectOneRadio>
+				
+				<h:commandButton action="question2" value="Answer">
+
+
+				</h:commandButton>
+			</h:panelGrid>
+		</h:form>
+
+	</div>
+
+</body>
+</html>
